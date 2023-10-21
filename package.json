@@ -2,7 +2,7 @@
   "name": "@formfunction-hq/formfunction-auction-house",
   "version": "0.0.5-alpha.146",
   "description": "TypeScript SDK for interacting with Formfunction's auction house program.",
-  "repository": "https://github.com/AJO-Ltd/auction-house.git",
+  "repository": "https://github.com/AJO-Ltd/auction-house",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "UNLICENSED",
@@ -39,7 +39,7 @@
     "dump": "./scripts/solana-program-dump.sh"
   },
   "dependencies": {
-    "@formfunction-hq/formfunction-program-shared": "0.0.61",
+    "@formfunction-hq/formfunction-program-shared": "https://github.com/AJO-Ltd/program-shared.git#kofi_local_fix",
     "@metaplex-foundation/mpl-token-auth-rules": "^1.1.0",
     "@msgpack/msgpack": "^2.8.0",
     "@solana/spl-token": "^0.3.7",
