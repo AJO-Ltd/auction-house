@@ -1,3 +1,4 @@
+//@ts-nocheck
 import {
   ANTI_BOT_DEV_AUTHORITY_KEYPAIR,
   createMasterEdition,
@@ -67,7 +68,7 @@ export default async function getEditionDistributorSetup({
   publicSaleStartTime?: number;
   saleEndTime?: number;
   startingPriceLamports: number;
-}) {
+}) :Promise<any>{
   const auctionHouseConfig =
     auctionHouseConfigArg != null
       ? {

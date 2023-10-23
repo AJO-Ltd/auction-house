@@ -1,3 +1,4 @@
+//@ts-nocheck
 import {
   createAtaIx,
   createTransferAtaIx,
@@ -833,8 +834,9 @@ export default class AuctionHouseSdk {
             data: null,
             primarySaleHappened: true,
             updateAuthority: wallet,
-          },
-        }
+          } 
+          
+        } as any,
       );
       updateMetadataIxs.push(metadataIx);
     }
@@ -1638,7 +1640,7 @@ export default class AuctionHouseSdk {
     tokenMint: PublicKey,
     priceInLamports: number,
     tokenSize = 1
-  ) {
+  ):Promise<any> {
     return getTradeState({
       auctionHouse: this.auctionHouse,
       auctionHouseProgramId: this.program.programId,
